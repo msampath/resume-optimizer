@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Local working files (the .skill is built/zipped on demand)
+*.skill
+build/
+tmp/
+.tmp/
+
+# OS-generated
+*.log
