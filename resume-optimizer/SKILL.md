@@ -1460,6 +1460,67 @@ A bullet describing the same accountability — leading a unified platform strat
 
 **Conflicts with:** None directly. Watch for industry-vocabulary collisions (the NRR example above) and resolve via Pattern 28's audience inference.
 
+### Pattern 34: Job-Function Title Selection [CONFIRMED]
+
+**The resume title reflects the target role's job function, not the candidate's internal employer-assigned title. Internal title disclosure is a recruiter-conversation practice, not a document practice.** Source-validated by feedback from many hiring managers across multiple resumes.
+
+This is the positive principle that supersedes the older "show internal title in italics underneath" convention. It governs how titles work on the resume document itself; Pattern 26 (Title Research) governs how to *choose* the job-function title.
+
+**The rule:**
+
+1. **The resume title is the target role's job function** — the title that describes the work the candidate does and the role they're applying into, expressed in the market's current vocabulary (see Pattern 26 for selection methodology).
+2. **The candidate's internal employer-assigned title does not appear on the resume.** No parenthetical, no italicized "(Internal title: X)" line, no footnote, no asterisk. The resume shows one title per role.
+3. **If asked about the internal title in a recruiter or hiring-manager conversation, answer truthfully** — but do not volunteer the information unsolicited. The resume's job is to position for the role; the conversation handles any title-mapping nuance if it comes up.
+4. **The internal title is documented elsewhere** — LinkedIn (which can also mirror the job-function title), references, background-check disclosures, employment-verification records. The information is not hidden; it's just not the resume's job to surface it.
+
+**Why this works (and why the older "italicized internal title" convention was wrong):**
+
+- **Hiring managers don't care about the internal title.** The internal title reflects how an employer's leveling chart happens to label the work — not the work itself, and not the market's vocabulary for it. A hiring manager evaluating a candidate for a "Lead TPM" role wants to see "Lead TPM" — they're matching against their own job description and their own leveling chart. The internal-title disclosure adds visual noise without adding information the hiring manager will act on.
+- **The parenthetical line splits the recruiter's scan.** The pipe-separated headline (Pattern 1) and the 10-second scan (Step 2) depend on visual density and clarity. A "(Internal title: X)" line under the title forces a second pass and makes the candidate look as though they're pre-defending against a question that almost never gets asked.
+- **The italicized internal-title disclosure reads as anxiety, not transparency.** Candidates who volunteer the internal title on the document look as though they're worried the hiring manager might catch them. Confident senior candidates pick the right title for the role and trust the conversation to handle edge cases.
+- **Background and reference checks already handle verification.** The system that catches title fraud isn't the resume document — it's the structured background-check process at offer stage, plus reference calls. Those processes surface the internal title regardless of what the resume said. The resume doesn't need to preempt them.
+
+**Formula (per-role header format):**
+
+```
+[Employer]  |  [Job-function title that matches the target role]  |  [Date range]
+```
+
+That's the entire role header. No parenthetical line. No italic disclosure. No asterisk.
+
+**Worked examples:**
+
+| Internal title (per employer) | Target role family | Resume displays |
+|---|---|---|
+| "Senior TPM — Data, Interoperability & Customer Success" | Lead Technical Program Manager (federal compliance) | "Lead Technical Program Manager — Healthcare Interoperability & Federal Compliance" |
+| "Senior TPM — Data, Interoperability & Customer Success" | Principal Data Platform Architect | "Principal Data Platform Architect" |
+| "Senior TPM — Data, Interoperability & Customer Success" | Senior CSM (Enterprise) | "Senior Customer Success Manager (Enterprise Healthcare)" |
+| "Technical Implementation Manager" | Customer Success Manager (Enterprise) | "Senior Customer Success Manager (Enterprise)" |
+| "Engineering Manager II" | Director of Engineering | "Director of Engineering" *(only if scope evidence supports it; see Pattern 26)* |
+| "Member of Technical Staff" | Principal Software Engineer | "Principal Software Engineer" *(only if scope evidence supports it)* |
+
+**Recruiter-conversation script (only if asked):**
+
+If the recruiter asks about the internal title, the candidate answers truthfully — briefly — and moves the conversation forward:
+
+> "My title at [employer] is X. I've positioned this resume as Y because the role-function maps to Y in the market and matches what you're hiring for. Happy to walk through the work that backs it."
+
+That's the entire disclosure. No apology, no over-explanation. The work backs the title; the conversation moves on.
+
+**When to skip this rule (rare exceptions):**
+
+- **Recently-renamed roles where the old title carries weight.** If the candidate just got promoted and the old title was widely recognized in their market while the new title is internal-only, leading with the recognized title and noting "newly promoted to [internal name]" can be appropriate. Apply Pattern 26 to confirm.
+- **Roles where the internal title IS the job-function title.** When the employer's title happens to match exactly what the market calls the work, no pivot is needed and no disclosure question arises. The rule is moot.
+- **Government / military / academic resumes with formal designations.** Some sectors require exact official titles on the document by convention (federal civilian GS-grade titles, military ranks, academic ranks). The rule about NOT showing internal titles still applies — but the "internal title" in these contexts often IS the only legitimate title, so there's nothing to pivot from.
+
+**Honesty check:** The job-function title must be defensible against the candidate's actual work. Pattern 26 governs the selection — if the candidate can't map ≥3 major responsibilities of the target role to evidence in their resume bullets, the pivot is overreach (see Anti-Pattern 15 for the failure mode). Pattern 34 governs the display — once a defensible title is chosen, show only that title.
+
+**Relationship to Anti-Pattern 15:** Anti-Pattern 15 flags the failure mode (pivoting without recruiter-conversation transparency, or pivoting to a title the work doesn't support). Pattern 34 is the corresponding positive guidance: how to display the title once chosen. Earlier guidance to "show internal title in italics underneath" has been retracted — it was reading as anxiety on the document and adding visual noise that hurt the 10-second scan. The transparency that Anti-Pattern 15 calls for happens in the conversation, not on the document.
+
+**Combines with:** [[pattern-26-title-research-and-selection-methodology]] (governs title selection), [[pattern-29-dual-positioning-via-resume-variants]] (each variant gets its own job-function title per Pattern 34), [[pattern-30-identity-preserving-variation]] (the display title is a variant field; the candidate's actual work history stays invariant).
+
+**Conflicts with:** Older "italicized internal-title disclosure" guidance previously in Anti-Pattern 15 — Pattern 34 supersedes that prescription.
+
 ---
 
 ## Function Pattern Library Scaffold
@@ -2004,45 +2065,43 @@ When a peer reviewer (especially one outside your domain) suggests abstracting s
 
 **Honest principle:** "If your peer reviewer doesn't recognize a domain term, explain the term to them — don't replace it."
 
-### Anti-Pattern 15: Title Pivoting Without Recruiter Transparency [PEER-REVIEW-SOURCED — with important nuance]
+### Anti-Pattern 15: Title Pivoting Without Defensible Evidence [PEER-REVIEW-SOURCED — with important nuance]
 
-**Pivoting your title to reflect a different job function (e.g., showing "Customer Success Manager" instead of "Technical Implementation Manager") can be legitimate positioning — but only when paired with upfront transparency in the initial recruiter conversation.**
+**Pivoting your resume title to reflect a different job function (e.g., showing "Senior Customer Success Manager" instead of "Technical Implementation Manager") is legitimate positioning — IF the work backs it. The failure mode is pivoting to a title the underlying work cannot defend. Disclosure of the internal title is a recruiter-conversation matter (when asked), not a document matter (see Pattern 34).**
 
 **The realistic context:**
-The job market in 2026 is tough. ATS systems filter by job title. Candidates with hybrid roles legitimately operate across multiple functions (e.g., "Technical Implementation Manager" who does substantial Customer Success work, or "Data Engineering Manager" who is functionally a TPM). Positioning the title to match the role being applied to **can be a survival tactic** in a tight market.
+The job market in 2026 is tough. ATS systems filter by job title. Candidates with hybrid roles legitimately operate across multiple functions (e.g., "Technical Implementation Manager" who does substantial Customer Success work, or "Data Engineering Manager" who is functionally a TPM). Positioning the title to match the role being applied to is standard practice (see Pattern 26 for title selection and Pattern 34 for title display). The anti-pattern is not the pivot itself — it's pivoting beyond what the work supports.
 
 **When title pivoting is acceptable:**
-- The pivoted title accurately reflects significant work you actually did
-- You can defend the pivot with concrete examples (specific dollar amounts in account growth, executive QBRs run, retention metrics owned — describing actual CSM work)
-- You raise the pivot transparently in the first recruiter conversation
-- The actual internal title is verifiable through references and not deliberately hidden
+- The pivoted title accurately reflects significant work the candidate actually did
+- The candidate can defend the pivot with concrete examples (specific dollar amounts in account growth, executive QBRs run, retention metrics owned — describing actual CSM work if pivoting to a CSM title)
+- The pivoted title is the title the market currently uses for that function (validated per Pattern 26's web search)
+- The candidate would answer truthfully if asked about the internal title in a recruiter conversation
 
-**Recommended transparency phrasing in recruiter calls:**
+**Detection patterns (red flags — when the pivot is overreach):**
+- ❌ The pivoted title doesn't reflect work the candidate actually did (e.g., "Customer Success Manager" when the candidate has zero retention/expansion work in their bullets)
+- ❌ The pivoted title implies seniority beyond the candidate's scope evidence (e.g., "Director of Engineering" when the bullets describe Senior Engineer scope — no team-size, budget, or org signal)
+- ❌ The pivoted title implies a function the candidate has no defensible bullet content for
+- ❌ The candidate cannot map ≥3 of the target role's major responsibilities to evidence in their own resume bullets
 
-**When title pivoting becomes problematic:**
-- ❌ The pivoted title doesn't reflect work you actually did
-- ❌ You hide the actual internal title entirely (background checks will catch it)
-- ❌ You pivot the title and then don't mention it in the recruiter call (creates a credibility cliff at offer/onboarding stage)
-- ❌ You pivot to a function you don't have any real evidence for ("Customer Success Manager" when you have zero retention/expansion work)
+**Why this matters:**
+- Title pivots beyond what the work supports get caught in interviews — the moment the hiring manager asks for specifics, the candidate has nothing to point to
+- Pivots that overstate seniority signal poor judgment about scope, not just title; that judgment failure spreads doubt across the rest of the resume
+- The honest fix is not to *avoid pivoting* but to *pivot honestly* — match the title to what the work actually supports
 
-**Recommended approach for your resume:**
-- Lead with the pivoted/positioned title (matches the role you're applying for, helps ATS)
-- Show the actual internal title in italics or parenthetical underneath
-- Raise the translation upfront with the recruiter
-- Be ready to defend the pivot with concrete work examples
+**Fix:**
+- Apply Pattern 26 (Title Research) to identify the title the market uses for the candidate's actual function
+- Apply Pattern 34 (Job-Function Title Selection) for how to display the chosen title on the resume
+- Verify defensibility: list the top 5 responsibilities of the target role, then map specific resume bullets to each. ≥3 mapped = defensible. <3 mapped = pull back to a less-stretched title
+- The resume shows the job-function title only (per Pattern 34) — no parenthetical internal-title disclosure
+- If asked about the internal title in a recruiter conversation, answer truthfully (script in Pattern 34); do not volunteer
 
-**Format:**
-```
-[Employer] | [Pivoted/positioned title — matches target role]  | [Date range]
-(Internal title: [Actual internal title])
-```
+**What changed from earlier guidance:**
+Earlier versions of this anti-pattern prescribed showing the internal title in italics or parentheses underneath the pivoted title. That guidance has been retracted. Field feedback from many hiring managers confirms: the parenthetical internal-title disclosure reads as anxiety, splits the recruiter's 10-second scan, and pre-defends against a question that almost never gets asked. The resume shows one title per role — the job-function title that matches the target role (Pattern 34). Disclosure happens in conversation if and when it comes up, never on the document.
 
-The pivoted title goes in the role header (matches what ATS and recruiters search for); the parenthetical underneath discloses the actual internal title in italics or smaller font.
+**Honest principle:** "Pivot the title to what the work supports; show only that title on the document; answer truthfully in conversation if asked."
 
-**Why this matters as an anti-pattern:**
-The original framing ("Title Inflation/Redefinition") was too rigid. The actual issue is **lack of transparency**, not the act of pivoting. A title can be repositioned for clarity; what you can't do is hide the actual title or fail to disclose the pivot when relevant.
-
-**Honest principle:** "Position the title for the role; disclose the translation in the conversation."
+**Related:** [[pattern-26-title-research-and-selection-methodology]] (governs which title to pick), [[pattern-34-job-function-title-selection]] (governs how to display the chosen title).
 
 ### Anti-Pattern 16: Unquantified Soft-Skill Bullets [UNIVERSAL]
 
@@ -2213,7 +2272,7 @@ Building a second variant resume from scratch is intimidating, so candidates def
 The source material reflects senior-level tech recruiting cultures. The skill is most reliable for senior IC and program-management roles at large technology employers; less validated for non-tech industries and non-senior levels. Pattern 28 (Industry and Role Inference) mitigates this via runtime adaptation. For any target market, prioritize the universal patterns and methodology patterns (26, 27, 28); patterns explicitly labeled as culture-specific should be applied only when the target matches that culture.
 
 **How to use the patterns now:**
-- Treat **[CONFIRMED]** patterns (2, 4, 5, 6, 7, 8, 9, 21, 24, 29, 30, 31, 32, 33) as reliable principles to apply broadly
+- Treat **[CONFIRMED]** patterns (2, 4, 5, 6, 7, 8, 9, 21, 24, 29, 30, 31, 32, 33, 34) as reliable principles to apply broadly
 - Treat **[OBSERVED]** patterns (1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 25) as candidate techniques — apply when they fit
 - Treat **[CONTEXT-DEPENDENT]** patterns (3) as situational — evaluate fit per candidate
 - Treat **[PEER-REVIEW-SOURCED]** patterns (19, 20, 22, 23) as reviewer-recommended techniques — apply with honest guardrails (Pattern 23 has confirmed-outcome backing)
