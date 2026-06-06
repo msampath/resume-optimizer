@@ -1407,6 +1407,59 @@ A bullet describing the same accountability — leading a unified platform strat
 
 **Related:** [[pattern-16-external-credibility-markers]] (parent pattern), [[pattern-9-specific-company-identifiers]] (named analyst firms as scannable signals), [[pattern-24-domain-functional-vocabulary]] (analyst-engagement vocabulary as senior-platform domain signal).
 
+### Pattern 33: Multiplier-Ceil Rule for Growth Metrics [CONFIRMED]
+
+**Convert every growth metric to multiplier form (Nx) and ceil to the next clean number on the resume; the precise underlying figure gets discussed in the recruiter or interview conversation.** Source-validated by feedback from many hiring managers across multiple resumes.
+
+**The rule:**
+
+1. **Convert to multiplier form whenever possible.** "2x revenue growth" reads more cleanly than "200% growth"; "3x portfolio expansion" reads more cleanly than "$800K → $1.95M (244%)."
+2. **Ceil to the next integer** when the multiplier is ≥1.5x. So 2.44x → 3x. 3.12x → 4x. 1.7x → 2x.
+3. **Ceil to 1.5x** when the multiplier is between 1.0x and 1.5x. So 112% NRR → 1.5x NRR. 1.3x → 1.5x.
+4. **Applies to all growth claims:** revenue/ARR growth, portfolio expansion, retention multipliers, throughput improvements, headcount growth, percentage improvements that can be re-expressed as multipliers.
+5. **Does NOT apply to static scope figures** (current ARR, current headcount, current member count, current portfolio size). Those stay precise — they're scale signals, not growth claims, and a recruiter cross-checking against LinkedIn would catch any rounding.
+6. **The precise underlying figure stays defensible in conversation.** Recruiter asks "how much was the growth exactly?" — the candidate answers with the precise number ("$800K to $1.95M, so 2.44x over three renewal cycles") and the conversation continues. The resume just doesn't display the precise figure.
+
+**Why this works:**
+- **Scannability:** "3x portfolio expansion" is parsed in <1 second; "2.44x portfolio expansion" forces a half-second of mental math during a 10-second scan. The clean number lands harder.
+- **Recruiter preference:** Hiring managers report that clean multipliers read as confident and senior; precise-decimal multipliers read as junior-coded (someone proudly reporting their exact spreadsheet output rather than a leader summarizing scope).
+- **Conversation hook:** The clean number invites the follow-up question. "Tell me about the 3x growth — what drove it?" becomes the candidate's opening to walk through the substance. Precise decimals close that loop prematurely.
+- **No overclaim risk when the underlying is defensible.** Ceiling 2.44x to 3x is not exaggeration — it's a stylistic compression that the candidate can immediately reconcile when asked. The substance is unchanged.
+
+**Formula:**
+
+| Underlying calculated value | Resume display |
+|---|---|
+| 1.0x to 1.5x | "1.5x" |
+| 1.51x to 2.0x | "2x" |
+| 2.01x to 3.0x | "3x" |
+| 3.01x to 4.0x | "4x" |
+| Percentages ≥100% that represent growth (not retention rates of <100%) | Convert to multiplier and ceil per above |
+| Percentage improvements <100% (e.g., 30% efficiency gain) | Stay as percentage; ceil to nearest 5% only if presentation is cluttered |
+
+**Worked examples:**
+
+| Calculated | Resume displays |
+|---|---|
+| Anchor account grew $800K to $1.95M (2.44x) | "3x growth" |
+| Portfolio scaled $3.7M to $7.35M peak (1.99x) | "2x portfolio scale-up" |
+| Throughput improved 312% | "4x throughput improvement" |
+| Net Revenue Retention 112% | "1.5x NRR" *(but note: NRR is industry-standard as a %; check audience before converting)* |
+| Implementation timeline reduced from 8-12 weeks to 2 weeks (5x faster) | "5x faster onboarding" |
+| Headcount grew from 5 to 13 over tenure (2.6x) | "3x team growth" |
+
+**When to skip the rule:**
+- **Industry-standard metric formats.** NRR is conventionally expressed as a percentage in SaaS/CSM circles (e.g., "112% NRR"); converting to "1.5x NRR" may confuse a CSM-specialist recruiter. Apply Pattern 28 to gauge the target audience's vocabulary expectations. When in doubt, keep the industry-standard format.
+- **Regulated quantitative claims.** SLA compliance ("99.99% uptime"), audit pass rates ("6 of 6 audits passed"), and compliance percentages where the precise figure is the credibility signal — keep precise.
+- **Static scale figures.** Current ARR, current headcount, current portfolio size — these are facts, not growth claims. Stay precise.
+- **The growth happened over a window that needs the precise figure to be credible.** "$800K to $1.95M in a single quarter" is more impressive at the precision than rounded; "$800K to $1.95M across 3 renewal cycles" reads cleanly as "3x." Check whether the timeframe context demands precision.
+
+**Honesty check:** The ceil is a presentation convention, not inflation. The candidate must be able to state the precise underlying figure on demand. If asked "is that exactly 3x?", the honest answer is "2.44x rounded — $800K to $1.95M across three renewal cycles" — which then becomes the substance of the conversation. Never use this rule to disguise weak underlying growth; if the calculated multiplier is 1.1x, displaying "1.5x" overstates the work.
+
+**Combines with:** [[pattern-2-numbers-do-the-persuasion]] (clean multipliers are a number-density tactic), [[pattern-21-bold-theme-prefix-in-bullets]] (clean multipliers fit the scannable-prefix structure), [[pattern-25-pm-outcome-anchor-bullet-structure]] (the headline $ anchor at the end of PM bullets often benefits from multiplier framing).
+
+**Conflicts with:** None directly. Watch for industry-vocabulary collisions (the NRR example above) and resolve via Pattern 28's audience inference.
+
 ---
 
 ## Function Pattern Library Scaffold
@@ -2160,7 +2213,7 @@ Building a second variant resume from scratch is intimidating, so candidates def
 The source material reflects senior-level tech recruiting cultures. The skill is most reliable for senior IC and program-management roles at large technology employers; less validated for non-tech industries and non-senior levels. Pattern 28 (Industry and Role Inference) mitigates this via runtime adaptation. For any target market, prioritize the universal patterns and methodology patterns (26, 27, 28); patterns explicitly labeled as culture-specific should be applied only when the target matches that culture.
 
 **How to use the patterns now:**
-- Treat **[CONFIRMED]** patterns (2, 4, 5, 6, 7, 8, 9, 21, 24, 29, 30, 31, 32) as reliable principles to apply broadly
+- Treat **[CONFIRMED]** patterns (2, 4, 5, 6, 7, 8, 9, 21, 24, 29, 30, 31, 32, 33) as reliable principles to apply broadly
 - Treat **[OBSERVED]** patterns (1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 25) as candidate techniques — apply when they fit
 - Treat **[CONTEXT-DEPENDENT]** patterns (3) as situational — evaluate fit per candidate
 - Treat **[PEER-REVIEW-SOURCED]** patterns (19, 20, 22, 23) as reviewer-recommended techniques — apply with honest guardrails (Pattern 23 has confirmed-outcome backing)
