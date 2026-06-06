@@ -1521,6 +1521,54 @@ That's the entire disclosure. No apology, no over-explanation. The work backs th
 
 **Conflicts with:** Older "italicized internal-title disclosure" guidance previously in Anti-Pattern 15 — Pattern 34 supersedes that prescription.
 
+### Pattern 35: AI Highlight Per Job Function [OBSERVED]
+
+**Every resume in the 2026 hiring market must surface the candidate's AI work, AND the framing of that AI work must match the target job function's evaluation criteria. The same underlying AI work gets framed differently for an architect, a program manager, a customer-success leader, or any other role family. Generic "AI-Orchestration" boilerplate at the bottom of the resume is not sufficient.**
+
+Field observation across the 2026 hiring market: there is almost no job posting at any seniority level in tech, healthcare-tech, fintech, govtech, or adjacent markets that does not surface AI capability in either the job description, the company's strategic narrative, or both. Hiring managers actively look for evidence the candidate has shipped AI work or driven AI adoption — not just listed AI tools on the skills line.
+
+**The rule:**
+
+1. **AI presence is mandatory on every variant.** If the candidate has done any AI work — shipped, architected, championed, automated, evaluated, or operationalized — it appears in the summary AND in the body of every resume variant.
+2. **AI framing matches the target function's evaluation lens.** The same MCP-integration project reads differently to an architect-track hiring manager (architecture decision), a TPM-track hiring manager (program-delivery decision), and a CSM-track hiring manager (customer-experience decision). The resume reframes the work per audience (see Pattern 31 for the reframing mechanic).
+3. **If the candidate has no AI work to honestly surface, the gap is the problem, not the resume.** Pattern 35 doesn't authorize inventing AI work. If the only AI exposure is "used ChatGPT to draft documents," that's not Pattern-35-surfaceable content — that's a gap to close before the next round of applications. Apply Pattern 19 (Worksheet Method) to identify whether real AI work is missing from the resume vs. genuinely absent from the career.
+4. **Refactoring is expected.** Adding AI to a resume that doesn't currently lead with it often requires summary rewrites, competency-block reordering, new dedicated bullets, and sometimes lifting AI work from a small mention buried at the bottom to a primary bullet at the top. Treat it as a Pattern 31 lead-verb reframing exercise, not a one-line addition.
+
+**Framing by function — worked examples on the same underlying work:**
+
+Underlying work: candidate architected a HIPAA-eligible AI integration pattern (Citrix → Claude via AWS Bedrock + TrueFoundry AI Gateway), shipped JIRA MCP server adoption across the org, built an automated Python+Snowflake+Power BI reporting pipeline.
+
+| Function | Lead verb cluster | Framing focus | Sample lead bullet |
+|---|---|---|---|
+| **Solutions/Platform Architect** | Architected, Designed, Established | Architecture decisions, reference patterns, infrastructure design | "Architected a HIPAA-eligible AI reference architecture (Citrix → Claude via AWS Bedrock, governed via TrueFoundry AI Gateway) enabling production-pattern GenAI workflows in regulated PHI environments." |
+| **Technical Program Manager** | Drove, Orchestrated, Sequenced, Coordinated | Cross-functional rollout, governance navigation, program-execution scope | "Drove enterprise rollout of HIPAA-eligible AI architecture — coordinating security, compliance, IT, and AWS infrastructure teams from concept through working test deployment in PHI-constrained environments." |
+| **Customer Success / Account Leader** | Eliminated, Reduced (friction), Improved, Accelerated | Customer-facing outcome, friction reduction, renewal-cycle impact | "Shipped AI-driven delivery automation (JIRA MCP, automated reporting pipelines) eliminating 3–4 recurring client questions per week and ~4 hours of weekly ad-hoc reporting effort — directly improving customer experience and reducing renewal-cycle friction." |
+| **Engineering Manager** | Built, Shipped, Led adoption of | Engineering throughput, team capability, technical-debt reduction | "Led team adoption of MCP-based AI integration patterns, eliminating ~4 hours/week of manual reporting effort across the engineering org." |
+| **Sales / Pre-Sales** | Demonstrated, Positioned, Closed with | Deal influence, customer credibility, competitive differentiation | "Positioned and demonstrated HIPAA-eligible AI architecture in pre-sales engagements, accelerating customer adoption decisions on AI-augmented workflows." |
+| **Data Scientist / ML Engineer** | Operationalized, Productionized, Tuned, Evaluated | Model behavior, eval rigor, production characteristics | "Operationalized Claude-based workflows via AWS Bedrock with TrueFoundry governance, designing the prompt/response audit pipeline for compliance-traceable inference." |
+
+**Where AI should appear in each variant (recommended placements):**
+
+- **Summary**: At least one pipe segment (Pattern 1) or one sentence (Pattern 23) must surface AI work. Generic "AI orchestration" mention in the summary is not enough — name the specific platform/pattern/outcome.
+- **Core Competencies**: At least one competency block that names specific AI tools and patterns the candidate has actually used (MCP, AWS Bedrock, Azure OpenAI, Vertex AI, specific LLM providers, AI Gateway tooling, RAG patterns, agent frameworks, etc. — validated per Pattern 27).
+- **Experience bullets**: At least one bullet group that frames AI work for the target audience per the table above. For Architect/TPM variants, this is typically one of the top three bullet groups; for CSM/Sales variants, it is typically positioned alongside customer-outcome content.
+
+**Anti-patterns this pattern guards against:**
+- **Buried AI** — listing "AWS Bedrock" in a stack-line on page 2 when the candidate actually shipped a Bedrock-based production pattern. The mention is there but the work is invisible.
+- **Generic AI boilerplate** — repeating the same "AI Orchestration & Automation" competency block verbatim across all variants without reframing the actual work for each audience.
+- **Fabricated AI** — claiming AI capabilities or projects the candidate has not actually done. Hiring managers probe AI claims in technical screens; fabrication fails immediately. See Pattern 27 honesty guardrails.
+- **AI-as-tool-only** — listing AI tools without describing the work done with them. "Claude, AWS Bedrock, MCP" is a tool inventory; "shipped MCP integration that eliminated X hours/week" is evidence.
+
+**When to skip this rule (rare exceptions):**
+- The candidate genuinely has no AI work and the target role explicitly does not value AI capability (rare in 2026; verify via Pattern 28 before assuming).
+- The target role is in a regulated function where AI claims invite compliance scrutiny that would slow the candidate's selection (some legal, certain medical, certain defense roles). Even here, the candidate should have an honest answer for "tell me about your AI exposure" — Pattern 35 just relaxes the visual prominence on the resume itself.
+
+**Honesty check:** Every AI bullet must back up to defensible work the candidate can walk through in detail in an interview. The architecture diagram exists, the project shipped, the customer outcome happened. Pattern 35 is about *framing* the work for different audiences (see Pattern 31), not inventing AI experience.
+
+**Combines with:** [[pattern-29-dual-positioning-via-resume-variants]] (each variant gets its own AI framing), [[pattern-30-identity-preserving-variation]] (the underlying AI work is invariant across variants; the framing is variant), [[pattern-31-lead-verb-reframing-of-shared-bullets]] (the mechanic for reframing the same AI work per audience), [[pattern-24-domain-functional-vocabulary]] (AI vocabulary is currently being standardized; use Pattern 27 to validate the specific terms in use at the target employer).
+
+**Conflicts with:** None directly. Watch for Anti-Pattern 13 (Buzzword Replacement of Specifics) — vague AI language ("AI-powered solutions," "leveraging machine learning") signals weakness rather than capability. Always name the specific platform, pattern, and outcome.
+
 ---
 
 ## Function Pattern Library Scaffold
@@ -2273,7 +2321,7 @@ The source material reflects senior-level tech recruiting cultures. The skill is
 
 **How to use the patterns now:**
 - Treat **[CONFIRMED]** patterns (2, 4, 5, 6, 7, 8, 9, 21, 24, 29, 30, 31, 32, 33, 34) as reliable principles to apply broadly
-- Treat **[OBSERVED]** patterns (1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 25) as candidate techniques — apply when they fit
+- Treat **[OBSERVED]** patterns (1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 25, 35) as candidate techniques — apply when they fit
 - Treat **[CONTEXT-DEPENDENT]** patterns (3) as situational — evaluate fit per candidate
 - Treat **[PEER-REVIEW-SOURCED]** patterns (19, 20, 22, 23) as reviewer-recommended techniques — apply with honest guardrails (Pattern 23 has confirmed-outcome backing)
 - Treat **[METHODOLOGY]** patterns (26, 27, 28) as required upstream procedures — Pattern 28 (Industry and Role Inference) must run first at Step 1 before any tactical pattern is applied; Pattern 26 (Title Research) runs second as part of Step 1; Pattern 27 (Business Context Validation) runs throughout before drafting any bullet with domain-specific terms
