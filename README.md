@@ -23,7 +23,7 @@ The skill body is **LLM-agnostic** — the YAML frontmatter is Claude-specific f
 
 **6-step framework:** Strategic Positioning → Recruiter 10-Second Test → Achievement Rewrite → Summary → ATS Alignment → Final Polish
 
-**36 patterns** across five confidence tiers (`[CONFIRMED]`, `[OBSERVED]`, `[CONTEXT-DEPENDENT]`, `[PEER-REVIEW-SOURCED]`, `[METHODOLOGY]`) covering headline formatting, bullet construction, quantification strategy, positioning tactics, domain vocabulary, and credibility markers.
+**36 patterns** across five confidence tiers (`[CONFIRMED]`, `[OBSERVED]`, `[CONTEXT-DEPENDENT]`, `[PEER-REVIEW-SOURCED]`, `[METHODOLOGY]`) covering headline formatting, bullet construction, quantification strategy, positioning tactics, domain vocabulary, credibility markers, multi-variant resume strategy, growth-metric presentation (multiplier ceiling), job-function title display, AI-work surfacing for 2026 hiring, and cross-industry dejargonization.
 
 **19 anti-patterns** — common mistakes that disqualify otherwise-strong candidates, each with detection criteria and a fix.
 
