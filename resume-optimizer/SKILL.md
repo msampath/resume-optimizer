@@ -76,9 +76,9 @@ Executive search firms consistently surface a small set of requirements that dis
 - Compliance: Federal mandates, regulatory deadlines
 - Stakeholder management: Multiple C-level stakeholders
 
-**5. Executive System Compatibility**
+**5. Executive System Compatibility** *(ATS systems and recruiting platforms: see Appendix A.9)*
 - **HireVue parsing**: Simple formatting, standard sections
-- **Workday ATS**: Specific field mapping requirements
+- **Workday ATS**: Specific field mapping requirements (Workday Recruiting is the dominant enterprise ATS — see Appendix A.9 for the full list including Greenhouse, Lever, iCIMS, Taleo, etc.)
 - **Executive review**: Board-level readability
 - **Stakeholder circulation**: Clean format for email/print
 
@@ -435,7 +435,7 @@ When analyzing any "winning" resume:
 
 ### Pattern 9: Specific Company Identifiers Get Prime Real Estate [CONFIRMED]
 
-Recognizable employer names (high-bar employers, unicorns, well-known brands) should be visually emphasized — bold, right-aligned, larger weight, or otherwise prominent.
+Recognizable employer names — high-bar employers, unicorns, well-known brands (see Appendix A.1 for the canonical list of tier-1 / high-bar tech employers, organized by region and segment) — should be visually emphasized — bold, right-aligned, larger weight, or otherwise prominent.
 
 A recruiter scanning fast should be able to spot company names in 2 seconds. If a candidate has tier-1 employers on their resume, that pattern should jump off the page.
 
@@ -641,10 +641,10 @@ Publications, patents, conference talks, open-source contributions, and other ex
 - For Principal/Staff/Senior Principal IC roles, these become **significant signals** of technical leadership
 
 **Types of credibility markers (ranked by approximate weight for senior SWE roles):**
-1. **Top-tier peer-reviewed papers** (ASPLOS, SOSP, OSDI, NSDI, SIGCOMM, ICML, NeurIPS) — strongest
-2. **Granted US/international patents** — strong, especially with citations
+1. **Top-tier peer-reviewed papers** (illustrative venues: ASPLOS, SOSP, OSDI, NSDI, SIGCOMM, ICML, NeurIPS; see Appendix A.8 for verifiability hosts) — strongest
+2. **Granted US/international patents** — strong, especially with citations (patent offices: see Appendix A.8)
 3. **Open-source maintainership** (committer/maintainer status on widely-used projects) — strong
-4. **Conference talks** at major events (re:Invent, Strange Loop, QCon, USENIX) — moderate-to-strong
+4. **Conference talks** at major events (illustrative: re:Invent, Strange Loop, QCon, USENIX) — moderate-to-strong
 5. **Industry blog posts on personal/company blog** with traction — moderate
 6. **Technical book authorship** — moderate (depends on publisher)
 7. **Stack Overflow / technical Q&A reputation** — minor at senior levels
@@ -660,9 +660,9 @@ A common gap is listing publications and patents without connecting them to actu
 
 **For roles where this matters most:**
 - Principal/Staff/Distinguished Engineer (any company)
-- Research Engineer roles (Anthropic, OpenAI, DeepMind, FAIR)
-- Architect roles at AWS/Azure/GCP
-- Roles at companies with strong publication cultures (Google, Meta, Microsoft Research)
+- Research Engineer roles at top-tier AI labs (see Appendix A.1 — *Top-tier AI labs / research-heavy employers*)
+- Architect roles at cloud hyperscalers (see Appendix A.2 — *Hyperscalers*)
+- Roles at companies with strong publication cultures (see Appendix A.1; representative examples: large-cap tech employers and research divisions of hyperscalers)
 
 **For roles where this matters less:**
 - Mid-level SWE roles (publications can read as "overqualified")
@@ -671,7 +671,7 @@ A common gap is listing publications and patents without connecting them to actu
 
 ### Pattern 17: Tenure as Strength Signal at High-Bar Employers [OBSERVED]
 
-Long tenure (8+ years) at a single high-bar employer reads as a strength signal — despite the general industry preference for shorter tenures — when that employer has a reputation for selective hiring, high performance bar, and visible attrition.
+Long tenure (8+ years) at a single high-bar employer reads as a strength signal — despite the general industry preference for shorter tenures — when that employer has a reputation for selective hiring, high performance bar, and visible attrition. See Appendix A.1 for the canonical list of tier-1 / high-bar tech employers where this signal applies most strongly; for non-tech industries, apply Pattern 28 (Industry/Role Inference) to identify the equivalent high-bar set.
 
 **Why this works at high-bar employers:**
 - Their attrition is well-known — longevity signals capability and culture fit
@@ -718,12 +718,12 @@ Named products, features, and references inside bullets should be hyperlinked to
 
 **What to hyperlink (in priority order):**
 1. **Launched products you worked on** → company product pages
-2. **Public features you owned** → AWS/Azure/GCP docs, GitHub repos
-3. **Conference talks you gave** → YouTube videos, conference websites
-4. **Publications/papers** → DOI links, ACM/IEEE pages
-5. **Patents** → USPTO links, patent description pages
-6. **Open-source projects** → GitHub repos (your contributions)
-7. **Press coverage** → TechCrunch, The Verge, industry publications
+2. **Public features you owned** → hyperscaler docs / what's-new pages, GitHub repos (see Appendix A.8 — *Cloud platform docs* and *Code*)
+3. **Conference talks you gave** → YouTube videos, conference websites (see Appendix A.8 — *Conference talks*)
+4. **Publications/papers** → DOI links, ACM/IEEE pages (see Appendix A.8 — *Academic publications*)
+5. **Patents** → USPTO or international patent-office links (see Appendix A.8 — *Patents*)
+6. **Open-source projects** → GitHub / GitLab / package-registry pages (see Appendix A.8 — *Code* and *Open-source ecosystem*)
+7. **Press coverage** → reputable industry publications (apply Pattern 27 to validate the publication is recognized in the target market)
 
 **What NOT to hyperlink:**
 - Internal projects with no public face (link goes nowhere)
@@ -1274,6 +1274,138 @@ This makes the skill **genuinely portable across industries and functions**, not
 - All three together form the **upstream methodology guardrails** that protect against the most common AI-assisted resume failure modes.
 
 **Honest principle:** "Don't apply patterns until you've established who the candidate is and validated that understanding against the world they're actually applying into. Tech-resume tactics are not universally applicable; the methodology is."
+
+### Pattern 29: Dual-Positioning via Resume Variants for Function-Adjacent Role Families [CONFIRMED]
+
+**Maintain a small stable of resume variants (typically 2–3) when a candidate's experience legitimately supports adjacent but distinct target role families.** Distinct from Pattern 26's per-JD title customization: Pattern 26 tunes a single resume per application; Pattern 29 produces *structurally different resumes* aimed at different role families the candidate could credibly land.
+
+**When to apply:**
+- The candidate's actual work supports 2+ adjacent role framings (e.g., Product Manager *and* Platform/Infrastructure Leader; Engineering Manager *and* Director of Engineering; CSM Leader *and* Strategy/Operations Leader)
+- The target role families have meaningfully different reader populations (different recruiters, different hiring managers, different stakeholder vocabulary)
+- The candidate has been in role long enough that one resume can't optimize for both audiences without diluting either
+
+**The variant unit is the role family, not the company:**
+A "Product PM variant" and an "Infrastructure-Leader variant" are two role-family variants. Five different variants for five different companies in the same role family is Pattern 26, not Pattern 29.
+
+**Structure of a variant pair:**
+- **Variant A** — leads with one identity (e.g., PM craft: strategy, GTM, P&L, customer journeys, success metrics)
+- **Variant B** — leads with the adjacent identity (e.g., infrastructure/platform leader: sovereign cloud, edge orchestration, regulated customers, analyst influence)
+- Both are honest representations of the same underlying work; neither claims experience the other doesn't
+- Shared bullets are reframed (see Pattern 31), not duplicated
+
+**Skip when:**
+- The candidate's work only supports one credible role framing — generating a second variant would force overreach
+- The candidate doesn't have time to maintain variants (a stale variant is worse than no variant)
+- The target roles are within the same family (use Pattern 26's per-JD tuning instead)
+
+**Best for:** Senior/Principal/Director-level candidates with cross-domain scope, especially in platform, infrastructure, product, and program-management functions where role-family boundaries are blurry.
+
+**Honesty check:** The same person, same job history, same scope numbers must appear in both variants. The variation is in *framing*, not *facts*. If a hiring manager from Role Family A interviewed the candidate using Variant A, then a hiring manager from Role Family B interviewed the same candidate using Variant B, both should recognize the same person — just emphasized for their respective lens.
+
+**Related:** [[pattern-30-invariant-variant-split]] (mechanic), [[pattern-31-lead-verb-reframing]] (technique), [[anti-pattern-19-same-bullet-same-verb-across-variants]] (guardrail).
+
+### Pattern 30: Identity-Preserving Variation — The Invariant/Variant Split [CONFIRMED]
+
+**The operational recipe that makes Pattern 29 (Dual-Positioning) deployable without rewriting from scratch.** Defines what stays constant across variant resumes vs. what shifts — preserving identity verifiability while enabling audience-specific framing.
+
+**Invariants (kept identical across all variants):**
+- Header block: name, location, contact, LinkedIn
+- Title line — the candidate's actual current/most-recent title (the *headline* may vary; the role title at each employer does not)
+- Employer names, role titles, date ranges across all positions
+- Patents, publications, certifications, education
+- Scope/scale numbers within shared bullets (team size, $ figures, %, headcounts) — facts don't change between audiences
+- Signature voice/tone line if used (Pattern 3 — e.g., a closing identity sentence in the summary)
+
+**Variants (deliberately reframed per audience):**
+- **Professional Summary** — almost entirely rewritten per variant; different leading identity, different vocabulary tier, different stakeholder emphasis
+- **Core Competencies** — typically 40–60% overlap, with 30–50% swapped for audience-specific terms (see Pattern 24 vocabulary tables)
+- **Lead bullet in current role** — reframed via Pattern 31 (lead-verb reframing)
+- **Bullet emphasis and ordering within shared roles** — bullets relevant to Variant A's audience are kept and may lead; bullets less relevant may be compressed or moved down
+- **Optional bullets** — some bullets appear in only one variant (e.g., the Infra variant in the source pair includes an "executive briefings and analyst conversations… regulated-edge scenarios" bullet that the Product variant omits — that audience cares; the other doesn't need it)
+- **Modifier choices within shared bullets** — adjectives, verb tense, and rhetorical framing shift even when the underlying claim is identical
+
+**The 60% rule (heuristic):**
+At least ~60% of the textual content should be shared across variants. If less than 60% is shared, the variants are diverging too far — at least one is making claims that aren't backed by the same evidence base. If more than ~85% is shared, the variants aren't doing meaningful positioning work and the second resume isn't earning its maintenance cost.
+
+**Why this works:**
+- A reference check or background check surfaces the same employer/title/dates regardless of which variant was submitted — invariants protect verifiability
+- Scope numbers stay defensible — the candidate can't tell one audience "$10M P&L" and another "$50M P&L" for the same role
+- Variant framing is genuinely earned by reframing existing work, not inventing new work
+- Maintenance cost stays manageable — most edits are surgical (summary + competencies + lead bullets), not wholesale
+
+**Honesty check:** Before treating two variants as "ready to send," verify the invariant list above is *bit-for-bit identical* across both. Any drift in an invariant field (employer, dates, scope numbers, credentials) is a credibility risk if both variants ever land in front of the same recruiter or background-check team.
+
+**Related:** [[pattern-29-dual-positioning-variants]] (when to deploy), [[pattern-31-lead-verb-reframing]] (variant technique).
+
+### Pattern 31: Lead-Verb Reframing of Shared Bullets [CONFIRMED]
+
+**Same underlying work, different lead verb, to signal different professional identity to different reader populations.** The bullet's facts, numbers, and scope stay constant; the opening verb shifts to match the variant resume's audience (see Pattern 29).
+
+**Formula:**
+`[Variant-specific lead verb] [same shared object] [same shared scope/numbers] [optionally reframed modifier phrase]`
+
+**Verb cluster examples by identity:**
+
+| Identity being signaled | Lead-verb cluster |
+|---|---|
+| **Product-craft / Steward** | Owned, Defined, Directed, Drove, Managed, Led (the strategy/roadmap/process) |
+| **Architect / Originator** | Created, Designed, Built, Architected, Established, Founded |
+| **Operator / Executor** | Coordinated, Standardized, Codified, Operationalized, Scaled, Executed |
+| **Influencer / Strategist** | Aligned, Influenced, Shaped, Positioned, Negotiated, Persuaded |
+| **People Leader** | Led and developed, Groomed, Coached, Hired, Mentored, Grew |
+
+**Worked example:**
+A bullet describing the same accountability — leading a unified platform strategy — can open with "**Owned** the product strategy for [platform]…" (steward framing for a Product audience) or "**Created** [platform]'s unified [domain] strategy…" (architect framing for an Infrastructure/Platform-leader audience). Same accountability; different identity signaled.
+
+**When to apply:**
+- Building variant resumes per Pattern 29 — Pattern 31 is the per-bullet mechanic
+- A single bullet legitimately reads two ways depending on the lead verb (the work genuinely was both stewarded *and* originated, both led *and* coordinated)
+- The reader population for each variant has meaningfully different scan vocabulary
+
+**Skip when:**
+- The lead verb shift would misrepresent the work (e.g., using "Created" for work the candidate inherited and only managed)
+- The candidate didn't do both roles within the bullet — pick the most accurate verb and don't reframe
+- The bullet's numbers and object alone carry the signal — the verb shift would be cosmetic noise
+
+**Honesty check:** Both verb choices must be defensible in interview. If asked "did you *create* this strategy or *own* it once it existed?", the candidate should be able to answer specifically. The variant lead verb chosen for each audience should be the verb the candidate would naturally use when describing the work to that audience in person.
+
+**Anti-pattern reminder:** See [[anti-pattern-19-same-bullet-same-verb-across-variants]] for the failure mode where variant resumes are built but the lead verbs aren't actually reframed — the variants then signal the same identity to both audiences and don't earn their maintenance cost.
+
+### Pattern 32: Analyst-Influence Bullets as Senior-Platform Credibility Markers [CONFIRMED]
+
+**A specific subtype of Pattern 16 (External Credibility Markers) for senior/principal/director-level candidates in platform, infrastructure, or product roles at enterprise software employers — surfacing direct engagement with industry analyst firms (see Appendix A.3 for the canonical list, including Gartner, Forrester, IDC, and vertical-specialty analysts) as a high-leverage credibility signal.**
+
+**Why this works:**
+- Analyst engagement is a *senior-only* signal — IC engineers and mid-level PMs rarely drive analyst conversations; the fact that the candidate did is itself a seniority marker
+- For platform/enterprise/B2B products, analyst influence directly affects buyer behavior and competitive positioning — a candidate who shaped a top-tier analyst-report placement (see Appendix A.4 — *Analyst Report Brand Names*) has demonstrably moved a needle that matters to enterprise GTM
+- Recognizable analyst-firm names act as Pattern 9 (specific company identifiers) — they make the bullet scannable and high-signal in a 10-second recruiter pass (choose the firm and report name appropriate to the candidate's actual engagement; use Appendix A.3 and A.4)
+- Analyst-influence bullets are difficult to fabricate; they are easily verified by anyone who attends analyst events or follows the named report
+
+**Formula:**
+`[Verb: Represented / Authored / Delivered / Shaped / Influenced] [audience: analysts / named firm from Appendix A.3 / industry analysts] [activity: conversations / narratives / briefings / events] [outcome: how the market understood X / contributing to Y leadership position in Z named report from Appendix A.4 / strengthening positioning in W report]`
+
+**Two well-formed shapes:**
+- **Direct-engagement shape:** `Represented [product/platform] in analyst conversations and customer-facing events, influencing how the market understood [employer]'s [strategic positioning]`
+- **Outcome-attribution shape:** `Played a key role in shaping how analysts viewed [product], contributing to [employer]'s leadership position in the [specific named report — see Appendix A.4]`
+
+**Choosing the right analyst firm and report for the bullet:**
+- Match the firm to the candidate's actual engagement history — never invent
+- Match the firm to the target market: generalist IT analysts (Gartner, Forrester, IDC) carry weight broadly; vertical-specialty analysts (KLAS in healthcare IT, Celent in financial services) carry more weight inside their vertical (see Appendix A.3)
+- Match the report format to what the firm actually publishes for the candidate's category — a "Magic Quadrant" reference must correspond to an actual Gartner MQ for that category; a "Wave" reference must correspond to an actual Forrester Wave (apply Pattern 27 to validate)
+
+**Best for:**
+- Senior, Principal, GPM, Director, VP-level resumes in enterprise software, platform, infrastructure, or B2B product roles
+- Candidates whose work has measurable analyst-report impact (mentioned by name, contributed to leader/visionary placement, influenced a category definition)
+- Variant resumes (Pattern 29) targeting senior-platform role families — analyst influence is a high-leverage signal that often belongs in the Infrastructure/Platform variant even if compressed in the Product-craft variant
+
+**Skip when:**
+- The candidate's analyst engagement was indirect (attended an event vs. drove the conversation) — overclaiming analyst influence is detectable by any reader who has been an analyst, briefed analysts, or read the actual reports
+- The target role is at a startup or non-enterprise employer where analyst coverage isn't part of the GTM motion
+- The candidate is below senior level — analyst-influence bullets on a mid-level resume read as overreach
+
+**Honesty check:** "Direct engagement" means the candidate personally briefed analysts, authored the narrative used in briefings, or owned the analyst relationship — not that someone on their team did it. If pressed in interview, the candidate should be able to name the specific analyst firm, the specific analyst (if appropriate), the cadence of engagement, and the specific report or placement the work influenced.
+
+**Related:** [[pattern-16-external-credibility-markers]] (parent pattern), [[pattern-9-specific-company-identifiers]] (named analyst firms as scannable signals), [[pattern-24-domain-functional-vocabulary]] (analyst-engagement vocabulary as senior-platform domain signal).
 
 ---
 
@@ -1936,9 +2068,9 @@ Candidates often quantify their hard deliverables (products, features, $) but de
 - Recruiters in vendor-side roles know the convention; naming clients reads as a junior mistake
 - Can disqualify you from roles at competitors of the named client, who fear similar disclosure if hired
 
-**The convention: use functional, scale, and vertical descriptors instead of client names.**
+**The convention: use functional, scale, and vertical descriptors instead of client names.** See Appendix A.12 (*Tier Descriptors for Sanitized Client/Employer References*) for the canonical list. Sample substitution table below illustrates the convention; the appendix is the authoritative source.
 
-**Substitution rules by client category:**
+**Substitution rules by client category (illustrative — see Appendix A.12 for full list):**
 
 | Client category | Substitute with |
 |---|---|
@@ -1951,12 +2083,12 @@ Candidates often quantify their hard deliverables (products, features, $) but de
 | Specific federal healthcare agency | "large federal healthcare agency" |
 | Specific defense contractor | "Tier-1 aerospace prime contractor" OR "DoD prime contractor" |
 
-**Categories of safe descriptors:**
+**Categories of safe descriptors** (see Appendix A.12 for the canonical groupings — scale tiers, funding tiers, functional/vertical descriptors, geographic descriptors):
 
-1. **Functional/vertical descriptors:** "regional bank client," "global manufacturer," "academic medical center," "global retailer," "Tier 1 investment bank," "DoD systems integrator," "state agency client," "Fortune 500 logistics provider"
-2. **Scale descriptors:** "Fortune [N] enterprise," "anchor enterprise account," "$[X]-billion-revenue client," "multi-region engagement"
-3. **Geographic descriptors when generic enough:** "Southeast U.S. financial services client," "Asia-Pacific banking client," "Midwest-region health system," "West-coast technology employer" (broader than naming the city or state)
-4. **Industry tier descriptors:** "top-[N] commercial bank," "top-[N] academic medical center," "Tier 1 SaaS platform," "top-[N] aerospace prime"
+1. **Functional/vertical descriptors** — see Appendix A.12, third bullet
+2. **Scale descriptors** — see Appendix A.12, first bullet
+3. **Funding tier descriptors** — see Appendix A.12, second bullet
+4. **Geographic descriptors when generic enough** — see Appendix A.12, fourth bullet
 
 **The numbers and scope carry the credibility; the names don't add information a recruiter actually needs.** "Anchor multi-region client, scaled from $[X] to $[Y] over [N] renewal cycles" tells a recruiter everything they need to assess the work. The client identity adds nothing the recruiter would act on differently.
 
@@ -1975,6 +2107,37 @@ Candidates often quantify their hard deliverables (products, features, $) but de
 **For vendor-side candidates targeting roles at the *target company's competitors* of a former client:** Be especially careful. A target company is more likely to disqualify a candidate who appears willing to disclose competitor information than to value the specific client knowledge.
 
 **Honest principle:** "If a recruiter could screenshot your resume and forward it to your former client's legal team as evidence of breach, the resume needs editing."
+
+### Anti-Pattern 19: Same-Bullet, Same-Verb Across Variant Resumes [OBSERVED — VARIANT-RESUME GUARDRAIL]
+
+**When a candidate maintains variant resumes per Pattern 29 (Dual-Positioning) but the shared bullets across variants use identical lead verbs and identical phrasing, the variants fail to differentiate — the second resume incurs maintenance cost without earning audience-specific signal.**
+
+**Detection patterns (red flags):**
+- Two variant resumes targeting different role families both open the lead bullet in the most recent role with the same verb (e.g., both say "Owned…" or both say "Led…")
+- Side-by-side diff of the two variants shows that shared bullets are byte-for-byte identical across more than ~85% of the bullet text
+- The two variants differ only in the summary paragraph and the competencies block — the experience section is unchanged
+- The candidate cannot articulate which audience each variant is for, or why a specific bullet is framed the way it is in each variant
+
+**Why it hurts:**
+- Variant resumes only earn their maintenance cost if the reframing actually changes what the reader's eye lands on first — same lead verb means same identity signal, regardless of summary tweaks
+- A recruiter for the secondary role family sees a resume that reads like the primary role family with a different summary glued on top — the framing feels inauthentic
+- The candidate ends up maintaining two stale resumes instead of one well-maintained primary plus a deliberately reframed secondary
+- The dual-positioning illusion is broken the moment a reader scans the experience section and sees the primary identity reasserting itself bullet by bullet
+
+**Why this happens:**
+Building a second variant resume from scratch is intimidating, so candidates default to copy-paste with only the summary swapped. The summary feels like the "hard" part (because it's narrative), but the experience section is where the reader spends the most time — and is therefore where the reframing has to actually land.
+
+**Fix:**
+- For each shared bullet in the variant resume, apply Pattern 31 (Lead-Verb Reframing) — choose a verb cluster that signals the variant's target identity (architect / steward / operator / influencer / people-leader)
+- Apply Pattern 30's invariant/variant split — confirm that scope numbers, employer, dates, and credentials are bit-for-bit identical, but lead verbs and modifier phrases are deliberately differentiated
+- For at least the top 3 bullets in the most recent role and the top 1–2 bullets in each prior role, the lead verb should differ between variants
+- If the candidate genuinely cannot find a defensible alternate lead verb for a given bullet, that's a signal the bullet doesn't reframe — leave it identical, but make sure other bullets carry the reframing load
+
+**Detection check:** Open both variants side-by-side. Read down just the lead verbs of every bullet. If the verb columns are >70% identical between variants, Anti-Pattern 19 is present.
+
+**Honest principle:** "If your two variant resumes are 90% identical in body text, you don't have two variants — you have one resume with two summaries. Either commit to the reframing or stop maintaining the second variant."
+
+**Related:** [[pattern-29-dual-positioning-variants]], [[pattern-30-invariant-variant-split]], [[pattern-31-lead-verb-reframing]].
 
 ---
 
@@ -1997,12 +2160,13 @@ Candidates often quantify their hard deliverables (products, features, $) but de
 The source material reflects senior-level tech recruiting cultures. The skill is most reliable for senior IC and program-management roles at large technology employers; less validated for non-tech industries and non-senior levels. Pattern 28 (Industry and Role Inference) mitigates this via runtime adaptation. For any target market, prioritize the universal patterns and methodology patterns (26, 27, 28); patterns explicitly labeled as culture-specific should be applied only when the target matches that culture.
 
 **How to use the patterns now:**
-- Treat **[CONFIRMED]** patterns (2, 4, 5, 6, 7, 8, 9, 21, 24) as reliable principles to apply broadly
+- Treat **[CONFIRMED]** patterns (2, 4, 5, 6, 7, 8, 9, 21, 24, 29, 30, 31, 32) as reliable principles to apply broadly
 - Treat **[OBSERVED]** patterns (1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 25) as candidate techniques — apply when they fit
 - Treat **[CONTEXT-DEPENDENT]** patterns (3) as situational — evaluate fit per candidate
 - Treat **[PEER-REVIEW-SOURCED]** patterns (19, 20, 22, 23) as reviewer-recommended techniques — apply with honest guardrails (Pattern 23 has confirmed-outcome backing)
 - Treat **[METHODOLOGY]** patterns (26, 27, 28) as required upstream procedures — Pattern 28 (Industry and Role Inference) must run first at Step 1 before any tactical pattern is applied; Pattern 26 (Title Research) runs second as part of Step 1; Pattern 27 (Business Context Validation) runs throughout before drafting any bullet with domain-specific terms
-- Anti-patterns 1-18 are confirmed weaknesses; address them when present (Anti-Pattern 12 is SWE-specific; Anti-Pattern 13 is context-dependent per its tag; Anti-Pattern 18 is universal but applies most to vendor-side/consulting/SaaS-implementation roles)
+- Treat **dual-positioning patterns (29, 30, 31)** as a cluster — apply together when building variant resumes for adjacent role families; Pattern 32 is a senior-platform specialization of Pattern 16 (External Credibility Markers)
+- Anti-patterns 1-18 are confirmed weaknesses; address them when present (Anti-Pattern 12 is SWE-specific; Anti-Pattern 13 is context-dependent per its tag; Anti-Pattern 18 is universal but applies most to vendor-side/consulting/SaaS-implementation roles). Anti-Pattern 19 is the variant-resume guardrail — apply it whenever Patterns 29–31 are in use
 - Don't apply every pattern to every resume — choose based on candidate level, function (TPM, SWE, PM, EM, CSM, etc.), and target role
 
 **Summary format choice (Pattern 1 vs Pattern 23):**
@@ -3314,6 +3478,169 @@ Every bullet should pass this test:
 - Every bullet quantified with at least one metric
 - Tone consistently executive-level throughout
 - User confident submitting to target roles
+
+---
+
+## Appendix A: Named Entity Reference Lists
+
+*This appendix consolidates the named companies, analyst firms, regulatory bodies, and platforms referenced throughout the skill. Patterns and anti-patterns that need a "Tier-1 employer" or "industry analyst" anchor should reference the relevant list here rather than hardcoding a single name, so the assistant can choose the closest match for the candidate's industry, geography, and seniority.*
+
+### How to use this appendix
+
+1. When a pattern says "see Appendix A.N," scan that list for the entity that best fits the candidate's context (industry, geography, employer tier, target role).
+2. Lists are **illustrative, not exhaustive.** If the candidate's actual employer, vendor, regulator, or platform is not listed, that is **not** a signal to omit the entity — apply Pattern 27 (Business Context Validation) to confirm the correct named entity and use it.
+3. **Sanitization rule:** These lists exist so the skill can name landmarks for orientation, not so candidates name clients. Pattern/Anti-Pattern usage of these names describes a *category* the candidate's work falls under. Candidate-side resume content still follows the confidentiality rules in Anti-Pattern 18.
+4. **Currency:** Industry landmarks shift. Lists below reflect a 2026 snapshot. Apply Pattern 27 to validate that a given entity is still current and named as listed.
+
+---
+
+### A1. Tier-1 / High-Bar Tech Employers
+
+*Used by: Pattern 9 (Specific Company Identifiers), Pattern 16 (External Credibility Markers), Pattern 17 (Tenure as Strength Signal).*
+
+Recognizable global employers whose name on a resume carries pattern-recognition weight in tech recruiting:
+
+- **US hyperscalers / megacaps:** Google (Alphabet), Meta, Microsoft, Amazon (incl. AWS), Apple, Netflix, Nvidia, Tesla
+- **High-bar enterprise software:** Salesforce, Oracle, Adobe, ServiceNow, Workday, Atlassian, Snowflake, Databricks, MongoDB, Stripe, Shopify, Block (Square), Twilio, Cloudflare, Datadog, HashiCorp, Palantir
+- **High-bar consumer / marketplace tech:** Airbnb, Uber, DoorDash, Lyft, Pinterest, Snap, Spotify, Reddit
+- **Top-tier AI labs / research-heavy employers:** Anthropic, OpenAI, Google DeepMind, Meta AI / FAIR, Microsoft Research, Apple ML Research
+- **Top-tier semiconductor / hardware:** Nvidia, AMD, Intel, Qualcomm, Broadcom, ASML, TSMC, ARM
+- **Top-tier APAC tech:** Tencent, Alibaba (incl. Ant Group), ByteDance, Baidu, Samsung Electronics, Sony, Rakuten, Coupang, Mercado Libre
+- **Top-tier European tech:** SAP, Spotify, ASML, Klarna, Adyen, Revolut, Bolt
+
+### A2. Cloud Hyperscalers and Major Cloud Platforms
+
+*Used by: Pattern 16 (Architect-role examples), Pattern 18 (Verifiability hosts for cloud docs), Function Scaffold: Software Engineering.*
+
+- **Hyperscalers:** AWS (Amazon Web Services), Microsoft Azure, Google Cloud Platform (GCP)
+- **Second-tier global cloud:** Oracle Cloud Infrastructure (OCI), IBM Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud
+- **Specialty / regional cloud:** DigitalOcean, Linode (Akamai), Vultr, Hetzner, OVHcloud, Scaleway
+- **Sovereign / regulated cloud:** AWS GovCloud, Azure Government, Google Public Sector Cloud, Oracle Government Cloud, OVHcloud Sovereign, T-Systems / Bleu (EU sovereign), Gaia-X aligned providers
+
+### A3. Industry Analyst Firms
+
+*Used by: Pattern 32 (Analyst-Influence Bullets).*
+
+Analyst firms whose reports influence enterprise buying decisions and whose engagement signals senior-platform credibility:
+
+- **Top-tier generalist IT analysts:** Gartner, Forrester, IDC
+- **Specialty / second-tier IT analysts:** 451 Research (S&P Global Market Intelligence), Constellation Research, RedMonk, Omdia (formerly Ovum), GigaOm, ISG, Everest Group, HFS Research, Nucleus Research
+- **Vertical/specialty analysts:** KLAS Research (healthcare IT), Celent (financial services), Aite-Novarica (financial services), Chartis Research (risk/finance), Frost & Sullivan (cross-industry)
+- **Equity/sell-side analyst houses that move enterprise narrative:** Morgan Stanley, Goldman Sachs, JPMorgan, Barclays, UBS technology research teams — when a candidate has briefed equity analysts in addition to industry analysts, this is a distinct and rarer signal
+
+### A4. Analyst Report Brand Names (Recognizable Frameworks)
+
+*Used by: Pattern 32 (Analyst-Influence Bullets).*
+
+Named analyst-report formats are recognizable shorthand for category-leader positioning:
+
+- **Gartner:** Magic Quadrant (MQ), Critical Capabilities, Hype Cycle, Peer Insights, Market Guide
+- **Forrester:** Wave, New Wave, Now Tech, Tech Tide, Total Economic Impact (TEI)
+- **IDC:** MarketScape, MarketShare, FutureScape
+- **Everest Group:** PEAK Matrix
+- **ISG:** Provider Lens
+- **HFS Research:** Horizons
+- **KLAS Research:** Best in KLAS, Category Leader rankings (healthcare IT)
+- **GigaOm:** Radar reports
+
+### A5. Major Consulting Firms and Systems Integrators
+
+*Used by: Anti-Pattern 18 (Client Name Disclosure context — these are the employer types where vendor-side confidentiality rules apply most strictly).*
+
+- **MBB strategy consulting:** McKinsey & Company, Boston Consulting Group (BCG), Bain & Company
+- **Big Four consulting / audit-adjacent:** Deloitte, PwC (PricewaterhouseCoopers), EY (Ernst & Young), KPMG
+- **Tier-2 strategy / management consulting:** Oliver Wyman, A.T. Kearney (Kearney), Roland Berger, L.E.K. Consulting, Strategy& (PwC), AlixPartners, FTI Consulting
+- **Global systems integrators:** Accenture, IBM Consulting, Capgemini, Cognizant, Infosys, TCS (Tata Consultancy Services), Wipro, HCLTech, Tech Mahindra, NTT Data, DXC Technology, Atos, Genpact
+- **Federal / regulated-market integrators:** Booz Allen Hamilton, Leidos, CACI, SAIC, ManTech, GDIT (General Dynamics IT), Peraton, MITRE (FFRDC — not a contractor but frequently named)
+- **Healthcare/life-sciences specialist consulting:** ZS Associates, IQVIA, McKinsey Health Institute, Trinity Life Sciences
+
+### A6. Developer Tooling and Platform Vendors
+
+*Used by: Pattern 24 (Domain-Functional Vocabulary), Anti-Pattern 13 (Buzzword Replacement of Specifics — when "evaluated platforms" should name them).*
+
+- **Source control / DevEx:** GitHub, GitLab, Bitbucket (Atlassian), Azure DevOps
+- **Issue tracking / project mgmt:** Jira (Atlassian), Linear, Asana, Monday.com, Trello, ClickUp, Shortcut
+- **Wiki / docs:** Confluence (Atlassian), Notion, Coda, GitBook
+- **CI/CD:** GitHub Actions, CircleCI, Jenkins, GitLab CI, Buildkite, Argo CD, Spinnaker
+- **Observability / monitoring:** Datadog, New Relic, Splunk, Dynatrace, Grafana, Honeycomb, Sentry, AppDynamics
+- **Data warehousing / lakehouse:** Snowflake, Databricks, BigQuery (Google), Redshift (AWS), Synapse (Microsoft), ClickHouse
+- **Data orchestration / transformation:** dbt (Labs), Airflow, Dagster, Prefect, Fivetran, Airbyte
+- **ML platforms / MLOps:** SageMaker (AWS), Vertex AI (GCP), Azure ML, Databricks MLflow, Weights & Biases, Hugging Face
+- **Container / orchestration:** Kubernetes, Docker, OpenShift (Red Hat), Rancher (SUSE), Nomad (HashiCorp)
+- **Infrastructure-as-code / config:** Terraform (HashiCorp), Pulumi, Ansible, Chef, Puppet, CloudFormation (AWS), Bicep (Azure)
+
+### A7. Enterprise SaaS Platforms by Category
+
+*Used by: Pattern 24 (Domain-Functional Vocabulary), Function Scaffolds.*
+
+- **CRM:** Salesforce, HubSpot, Microsoft Dynamics 365, Zoho, Pipedrive, SugarCRM
+- **ERP:** SAP (S/4HANA, ECC), Oracle (NetSuite, Fusion, JD Edwards, PeopleSoft), Workday, Microsoft Dynamics 365 F&O, Infor, Epicor
+- **HCM / payroll:** Workday, SAP SuccessFactors, Oracle HCM Cloud, ADP, UKG, Rippling, BambooHR, Gusto
+- **ITSM / ESM:** ServiceNow, Atlassian Jira Service Management, BMC Helix, Freshservice, Ivanti, Cherwell
+- **Marketing automation:** Marketo (Adobe), HubSpot, Salesforce Marketing Cloud, Eloqua (Oracle), Pardot, Braze, Iterable, Klaviyo, Customer.io
+- **Customer success platforms:** Gainsight, ChurnZero, Totango, Catalyst, Vitally, Planhat
+- **Collaboration / messaging:** Slack (Salesforce), Microsoft Teams, Zoom, Google Workspace, Webex
+- **Document / e-signature:** DocuSign, Adobe Sign, Dropbox Sign, PandaDoc
+- **Customer support:** Zendesk, Salesforce Service Cloud, Freshdesk, Intercom, Front, Help Scout
+
+### A8. Verifiability Hosts for Pattern 18 (Embedded Hyperlinks on Named Projects)
+
+*Used by: Pattern 18 (Embedded Hyperlinks on Named Projects).*
+
+External platforms where senior IC contributions can be independently verified:
+
+- **Code:** GitHub, GitLab, Bitbucket — repos, contributions, commit history
+- **Patents:** USPTO (United States Patent and Trademark Office), EPO (European Patent Office), JPO (Japan), CNIPA (China), Google Patents (aggregator), Lens.org (aggregator)
+- **Academic publications:** ACM Digital Library, IEEE Xplore, arXiv, Google Scholar, Semantic Scholar, ResearchGate, SSRN (social sciences/finance), PubMed (life sciences), DBLP (computer science bibliography), DOI.org links
+- **Conference talks:** Conference site session pages, YouTube official conference channels, InfoQ, SlideShare/Speaker Deck (slides)
+- **Standards / spec authorship:** W3C, IETF (RFC), ISO, IEEE Standards Association, OASIS, Linux Foundation (CNCF, OpenJS, etc.)
+- **Open-source ecosystem:** Apache Software Foundation project pages, CNCF landscape, npm/PyPI/crates.io/Maven Central (package ownership)
+- **Cloud platform docs (for features candidate owned):** AWS docs / what's-new pages, Azure docs / updates, Google Cloud docs / release notes
+
+### A9. Job-Search Infrastructure and ATS Platforms
+
+*Used by: ATS-Friendly Formatting Guidelines, Anti-Pattern 11 (Missing Contact Channels), Workflow Integration.*
+
+- **ATS / recruiting platforms:** Workday Recruiting, Greenhouse, Lever, iCIMS, SmartRecruiters, Taleo (Oracle), SAP SuccessFactors Recruiting, Jobvite, Ashby, BambooHR ATS, Rippling ATS
+- **Job boards / aggregators:** LinkedIn, Indeed, Glassdoor (Indeed-owned), ZipRecruiter, Monster, Built In, AngelList Talent (Wellfound), Otta (Welcome to the Jungle), Dice, Hired
+- **Resume scanning / ATS-check tools:** Jobscan, Resume Worded, Teal, Enhancv, Rezi, Skillsyncer
+- **Professional networks for recruiter reach:** LinkedIn (dominant in NA/EU), Xing (DACH region), Wellfound (startups), Lunchclub, Polywork
+
+### A10. Healthcare EHR and Clinical Information Systems
+
+*Used by: Function Scaffold: Healthcare Clinical, Pattern 27 (Business Context Validation — healthcare).*
+
+- **Major EHRs (US):** Epic, Oracle Health (formerly Cerner), MEDITECH, athenahealth (Athena), Allscripts/Veradigm, NextGen, eClinicalWorks
+- **Major EHRs (Global):** InterSystems TrakCare, ChipSoft (HiX, NL/EU), Dedalus (EU), Philips Tasy (LATAM)
+- **VA / DoD systems:** VistA (legacy VA), MHS GENESIS (DoD, Oracle Health-based)
+- **Specialty clinical platforms:** Pyxis (BD, dispensing), GE Centricity, Sectra (imaging), Change Healthcare (claims/payments — now Optum)
+- **Healthcare data / interoperability:** Redox, 1upHealth, Innovaccer, Health Gorilla, Particle Health, Datavant, Health Catalyst
+
+### A11. Regulatory Bodies and Frameworks by Industry
+
+*Used by: Pattern 27 (Business Context Validation), Pattern 28 (Industry/Role Inference), Function Scaffolds (all regulated families).*
+
+- **US healthcare:** HHS, CMS (Medicare/Medicaid), FDA, HIPAA, HITECH, CLIA, Joint Commission, HEDIS, MIPS/MACRA, USCDI, HL7/FHIR (standards); CMS-9115-F, CMS-0057-F (specific rules); Da Vinci Project (implementation guide accelerator)
+- **US financial services:** SEC, FINRA, OCC, Federal Reserve, FDIC, CFTC, CFPB, FASB, PCAOB; SOX, Dodd-Frank, GLBA, FCRA, Reg E/Z, Basel III/IV, CCAR, DFAST, IFRS 9, CECL
+- **US defense / federal:** DoD, NSA, DISA, GSA, NIST (SP 800-53, 800-171, CSF), FedRAMP, FISMA, CMMC, ATO/RMF, ITAR, EAR, DFARS, FAR; clearance levels (Public Trust, Secret, TS, TS/SCI)
+- **US energy / utilities:** NERC, FERC, NRC (nuclear), DOE; NERC CIP, FERC Order 2222
+- **US aviation / aerospace:** FAA, NASA; DO-178C, DO-254, ARP4754A, AS9100, MIL-STD; FAA Part 23/25/27/29
+- **EU:** GDPR, NIS2, DORA (financial), DMA, DSA, AI Act, EU MDR (medical devices), eIDAS, PSD2/PSD3
+- **UK:** FCA, PRA, ICO; UK GDPR
+- **Cross-border data:** APEC CBPR, Standard Contractual Clauses (SCCs), Adequacy Decisions
+- **Industry-agnostic security/privacy:** ISO/IEC 27001, 27017, 27018, 27701; SOC 2 (Type I/II); PCI DSS; CSA STAR
+- **Telecom:** FCC (US), Ofcom (UK), 3GPP (standards), ETSI, ITU-T
+
+### A12. Tier Descriptors for Sanitized Client/Employer References
+
+*Used by: Anti-Pattern 18 (Client Name Disclosure), CONTRIBUTING.md sanitization checklist, peer-review-sourced bullet templates.*
+
+Generic tier descriptors that replace specific named clients in vendor-side, consulting, agency, or SaaS-implementation resume bullets:
+
+- **Scale tiers:** "Fortune [N] enterprise" (10/50/100/500/1000), "Global 2000," "FTSE 100/250," "Nikkei 225," "DAX 40," "$[X]-billion-revenue enterprise"
+- **Funding tiers:** "Series [A–F] startup," "growth-stage startup," "publicly-traded enterprise," "PE-backed portfolio company," "unicorn-tier (>$1B valuation) private company"
+- **Functional / vertical descriptors:** "Tier-1 global investment bank," "regional commercial bank," "money-center bank," "global asset manager," "national health insurer," "academic medical center," "integrated delivery network (IDN)," "Fortune 500 retailer," "global CPG manufacturer," "Tier-1 automotive OEM," "state agency client," "federal civilian agency," "DoD systems integrator," "intelligence community customer"
+- **Geographic descriptors:** "multi-region engagement," "EMEA-headquartered enterprise," "APAC-headquartered telecom," "LATAM-based fintech"
 
 ---
 

@@ -99,8 +99,8 @@ Confidence tags: `[CONFIRMED]` (2+ validated sources) · `[OBSERVED]` (single so
 The LLM should apply the following checklist to its output before returning it. If you are the LLM generating a contribution, verify each item is clear before outputting:
 
 - [ ] No candidate names, contact info, or social handles
-- [ ] No specific employer names — use tier descriptors ("BigTech-tier employer," "Series B startup," "enterprise SaaS vendor")
-- [ ] No specific client names — use function descriptors ("regional bank client," "state agency engagement," "Fortune-tier retailer")
+- [ ] No specific employer names — use tier descriptors from Appendix A.12 in SKILL.md ("BigTech-tier employer," "Series B startup," "enterprise SaaS vendor")
+- [ ] No specific client names — use function descriptors from Appendix A.12 in SKILL.md ("regional bank client," "state agency engagement," "Fortune-tier retailer")
 - [ ] No specific patent numbers, paper titles, or citation counts that uniquely identify a person
 - [ ] No internal project codenames
 - [ ] No career trajectory details that fingerprint a specific person (company sequence, tenure length at a specific employer, school name + year + company sequence)

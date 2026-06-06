@@ -23,13 +23,15 @@ The skill body is **LLM-agnostic** — the YAML frontmatter is Claude-specific f
 
 **6-step framework:** Strategic Positioning → Recruiter 10-Second Test → Achievement Rewrite → Summary → ATS Alignment → Final Polish
 
-**28 patterns** across five confidence tiers (`[CONFIRMED]`, `[OBSERVED]`, `[CONTEXT-DEPENDENT]`, `[PEER-REVIEW-SOURCED]`, `[METHODOLOGY]`) covering headline formatting, bullet construction, quantification strategy, positioning tactics, domain vocabulary, and credibility markers.
+**32 patterns** across five confidence tiers (`[CONFIRMED]`, `[OBSERVED]`, `[CONTEXT-DEPENDENT]`, `[PEER-REVIEW-SOURCED]`, `[METHODOLOGY]`) covering headline formatting, bullet construction, quantification strategy, positioning tactics, domain vocabulary, and credibility markers.
 
-**18 anti-patterns** — common mistakes that disqualify otherwise-strong candidates, each with detection criteria and a fix.
+**19 anti-patterns** — common mistakes that disqualify otherwise-strong candidates, each with detection criteria and a fix.
 
 **Career Level Positioning Framework** — distinct signal requirements for Entry, Mid, Senior, Executive, and C-Suite.
 
 **Function Pattern Library Scaffold** — structural scaffolds for 14 function families. Tech functions (SWE, TPM, PM) have validated patterns; non-tech families have scaffolds awaiting contributor fill-in.
+
+**Appendix A: Named Entity Reference Lists** — 12 categorized lists (tier-1 employers, hyperscalers, analyst firms, analyst report names, consulting/SIs, devtools, SaaS, verifiability hosts, ATS, healthcare EHRs, regulators, tier descriptors) that patterns reference instead of hardcoding individual names.
 
 ## Domain Portability
 
