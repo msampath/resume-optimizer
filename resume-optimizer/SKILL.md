@@ -1456,6 +1456,26 @@ A bullet describing the same accountability — leading a unified platform strat
 
 **Honesty check:** The ceil is a presentation convention, not inflation. The candidate must be able to state the precise underlying figure on demand. If asked "is that exactly 3x?", the honest answer is "2.44x rounded — $800K to $1.95M across three renewal cycles" — which then becomes the substance of the conversation. Never use this rule to disguise weak underlying growth; if the calculated multiplier is 1.1x, displaying "1.5x" overstates the work.
 
+**Critical sub-rule — never conflate the multiplier with the underlying raw figures in the same clause.** The single most common failure mode of this pattern is writing both at once: "Scaled team 7x (from 2 to 13 people)" or "Grew anchor 3x ($800K → $1.95M)" *inside the resume body*. This undercuts both signals — the multiplier loses punch because the reader does the math and lands on the small absolute number; the raw figures lose scale because they're now anchored against a multiplier that reads as inflated.
+
+**Detection patterns (red flags):**
+- `Nx (from A to B)` — explicit math inside parentheses next to the multiplier
+- `from A to B — Nx growth` — em-dash linking the raw figures to the multiplier
+- `Nx growth ($X → $Y)` — arrow showing the math next to the multiplier
+- Any construction where the reader sees both the clean ceiled number AND the underlying figures in a single visual unit
+
+**Why this hurts specifically:**
+- "Scaled team 7x" reads as a confident scope signal — recruiter pattern-matches "team-build leader at meaningful scale"
+- "(from 2 to 13)" forces the reader to do math and immediately lands them on "13 people, that's manager scope, not director-of-engineering scope"
+- Combined: "Scaled team 7x (from 2 to 13)" reads as "I'm trying to make 13 sound bigger than it is by calling it 7x"
+- The pattern is structurally honest (the math is correct) but tonally inflated (the framing fights itself)
+
+**The correct application:**
+- **Resume body**: show the multiplier alone with whatever qualifying context strengthens it (geography, function, scope of what the team serves) — `"Scaled engineering org 7x — globally distributed delivery (US + India) supporting 9-account enterprise portfolio"`
+- **Recruiter conversation** (when asked): give the raw figures freely — `"Started with 2, now at 13 across US and India, all hands-on engineering with one tech lead per region"`
+
+The math belongs in the conversation. The multiplier belongs on the page. Never both.
+
 **Combines with:** [[pattern-2-numbers-do-the-persuasion]] (clean multipliers are a number-density tactic), [[pattern-21-bold-theme-prefix-in-bullets]] (clean multipliers fit the scannable-prefix structure), [[pattern-25-pm-outcome-anchor-bullet-structure]] (the headline $ anchor at the end of PM bullets often benefits from multiplier framing).
 
 **Conflicts with:** None directly. Watch for industry-vocabulary collisions (the NRR example above) and resolve via Pattern 28's audience inference.
