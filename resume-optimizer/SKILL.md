@@ -1569,6 +1569,83 @@ Underlying work: candidate architected a HIPAA-eligible AI integration pattern (
 
 **Conflicts with:** None directly. Watch for Anti-Pattern 13 (Buzzword Replacement of Specifics) — vague AI language ("AI-powered solutions," "leveraging machine learning") signals weakness rather than capability. Always name the specific platform, pattern, and outcome.
 
+### Pattern 36: Cross-Industry Dejargonization [OBSERVED]
+
+**Translate domain-specific terminology into industry-agnostic language when the candidate is targeting roles outside their current industry — while preserving scope numbers, AI tooling, and cross-industry credentials unchanged. Keep the domain-specific terms accessible in one labeled "Regulated-Industry" context line so in-domain readers can still find them.**
+
+Distinct from Pattern 29 (Dual-Positioning for Function-Adjacent Role Families) — that pattern is "same person, different role family." Pattern 36 is "**same person, same role family, different industry audience**." A TPM applying to TPM roles across industries needs their TPM work to read for an out-of-healthcare recruiter without losing depth for an in-healthcare recruiter who reaches the document.
+
+**When to apply:**
+- Candidate is applying to roles in a different industry than their current one (healthcare-tech IC → consumer-tech, fintech → defense, energy → retail, etc.)
+- The target recruiter, hiring manager, and ATS will not recognize the candidate's industry-specific terminology
+- The candidate's work is genuinely transferable but reads as opaque without translation
+- The candidate is maintaining a parallel in-industry variant — Pattern 36 builds the cross-industry counterpart
+
+**The translation move:**
+
+Replace domain-specific terms with industry-agnostic equivalents while preserving the underlying claim. The scope numbers, dollar figures, and quantified outcomes stay precise per Pattern 33; only the *vocabulary* shifts.
+
+**Translation rules (illustrative — healthcare-IT to general):**
+
+| Domain-specific (in-industry) | Industry-agnostic (cross-industry) |
+|---|---|
+| "health plan members" | "patients" or "customers" |
+| "payer" / "payer client" | "insurance" / "insurance client" |
+| "CMS audits + state Medicaid audits" | "regulatory audits" |
+| "MA Plan Finder HPMS submission" | "Medicare submission" |
+| "CRD/DTR/PAS endpoints" | "standards-based API endpoints" |
+| "HL7 Da Vinci reference architecture" | (moved to context parenthetical) |
+| "payer-to-payer data exchange" | "insurer-to-insurer data exchange" |
+| "PHI environments" | "sensitive data environments" |
+| "GovCloud / data-residency-constrained Medicaid" | "government cloud / data-residency-constrained government programs" |
+| "100M+ claims" | "100M+ records" |
+| "clinical and claims data integration" | "data integration" |
+| "EHR systems" | (moved to Healthcare Domain context parenthetical) |
+| "FWA detection" | "fraud, waste & abuse detection" |
+| "federal mandate delivery" | "regulatory deadline delivery" |
+| "state Medicaid deployments" | "state government deployments" |
+
+The translation principle generalizes: identify the domain-specific noun, find the closest industry-agnostic noun that preserves the underlying claim, and substitute. The same principle applies to any industry-pair (finance: "FIX/SWIFT messages" → "trading messages"; defense: "ATO/RMF" → "federal security accreditation"; energy: "NERC CIP" → "grid security compliance").
+
+**What NEVER gets translated (preserve as-is):**
+
+1. **Scope and financial numbers** — $7.35M ARR stays $7.35M; 2.2M+ population scope stays 2.2M+; 99.99% uptime stays 99.99%. The translation is vocabulary, not figures.
+2. **Cross-industry-recognized credentials and tools** — AWS Bedrock, Snowflake, Python, Power BI, Kubernetes, MCP, FHIR (when surfaced as an API standard, not as a healthcare-specific marker) — these are universal tech-stack signals.
+3. **AI tooling and frameworks** — 2026 cross-industry signal; AI vocabulary stays exactly as in the in-domain variant per Pattern 35.
+4. **Universal compliance frameworks** — SOC 2, ISO 27001, GDPR — recognized across industries.
+5. **Pattern 21 bold theme prefixes** — translate the body of the bullet, not the prefix when the prefix is already industry-agnostic. ("Enterprise Portfolio Ownership & Growth" stays; "Federal Compliance Program Delivery (CMS-9115-F)" becomes "Federal Compliance Program Delivery" with the regulation citation in the body.)
+
+**The context-parenthetical technique:**
+
+Don't strip domain-specific terms entirely — surface them in one dedicated competency block as parenthetical context so an in-domain reader who reaches the resume can still find the industry-specific credibility signals. This is the elegant move that makes a single resume work across both audiences.
+
+**Example:** In the "Regulated-Industry Delivery" competency block of the dejargonized variant:
+```
+Regulated-Industry Delivery: Federal Compliance Mandates · Standards-Based Integration · Data Privacy & Security (HIPAA, PHI) · Audit Readiness · Government Cloud (AWS GovCloud) — healthcare context: CMS-9115-F, CMS-0057-F, USCDI v3, HL7 Da Vinci (CRD, DTR, PAS), FHIR, EDI X12
+```
+
+The lead text is industry-agnostic ("Federal Compliance Mandates," "Standards-Based Integration"); the em-dash sets off the healthcare-specific anchors as supplementary context. An out-of-healthcare recruiter scans past the em-dash; an in-healthcare recruiter reads the parenthetical and recognizes the depth.
+
+**Apply to:**
+- Title (drop function-narrowing suffixes that reference industry-specific role families)
+- Summary pipes (translate the audience-narrowing terms; keep the financial and scope figures)
+- Competency block bodies (translate prose; use context-parenthetical for domain credentials)
+- Experience bullets (translate domain nouns inline; keep numbers and AI vocabulary unchanged)
+- Modules / methodologies described in the time-to-value block or similar lists (collapse domain-specific module names into generic categories: "core data integration," "advanced analytics," "risk-scoring modules")
+
+**Skip when:**
+- Candidate is applying within their current industry — Pattern 36 destroys the in-domain signal density and disqualifies vs. an in-domain candidate who kept the specifics
+- The target role explicitly requires domain expertise the dejargonization removes — if a healthcare-IT product company is hiring a TPM specifically because they need someone who has shipped CMS-9115-F, dejargonizing the CMS-9115-F mention is self-defeating
+- The candidate has only one industry of experience and is applying broadly without a specific cross-industry target — apply Pattern 26 first to confirm the target industry; Pattern 36 needs an audience
+
+**Honesty check:** Dejargonization is translation, not reduction. The candidate must still be able to describe the underlying domain-specific work in interview detail. If asked "what's CMS-9115-F?" the candidate answers with the spec; if asked "what does 'patients' mean here?" the candidate answers with the health-plan-member specifics. The resume's job is to be readable; the conversation handles the precision.
+
+**Pattern 36 vs. Anti-Pattern 13:** Anti-Pattern 13 warns against "Buzzword Replacement of Specifics" — replacing concrete domain terminology with abstract consultant-speak ("Regulatory Systemization," "Process Improvement"). Pattern 36 is the legitimate cross-industry alternative: replace domain-specific *nouns* with industry-agnostic *nouns* that still describe the work concretely. "Federal mandate delivery" is concrete; "regulatory transformation excellence" is buzzword-stuffed. The test: would a hiring manager in the target industry recognize the verb-object pair as describing real work? If yes, Pattern 36; if no, Anti-Pattern 13.
+
+**Combines with:** [[pattern-26-title-research-and-selection-methodology]] (Pattern 36 may require a title revision when the in-domain title is industry-anchored), [[pattern-29-dual-positioning-via-resume-variants]] (a cross-industry variant is one more variant in the candidate's stable), [[pattern-30-identity-preserving-variation]] (scope numbers, employer, dates, and credentials stay invariant; vocabulary varies), [[pattern-33-multiplier-ceil-rule-for-growth-metrics]] (the multiplier-ceil rule applies; dejargonization doesn't change number conventions), [[pattern-35-ai-highlight-per-job-function]] (AI vocabulary stays untranslated; AI is the 2026 cross-industry signal).
+
+**Conflicts with:** None directly. The risk is *over-dejargonization* — translating to the point where the resume reads as generic and loses the depth signal. The context-parenthetical technique mitigates this.
+
 ---
 
 ## Function Pattern Library Scaffold
@@ -2068,10 +2145,13 @@ For SWE candidates: the fix is **not** to feel inadequate at summary-writing rel
 - Maintain two versions of your resume if you're targeting both in-domain and out-of-domain roles
 - For each application, check: would the recruiter recognize this term?
 - If yes → use the specific
-- If no → abstract slightly, but keep enough specifics to prove depth
+- If no → apply Pattern 36 (Cross-Industry Dejargonization) — translate domain nouns to industry-agnostic equivalents while preserving scope numbers, AI tooling, and cross-industry credentials; surface domain terms in a context parenthetical so depth signals stay available
+- Do NOT replace specifics with abstract consultant-speak ("Regulatory Systemization," "Process Improvement Excellence") — that's Anti-Pattern 13 proper; Pattern 36 is the legitimate alternative
 
 **Caution on peer reviewers:**
 When a peer reviewer (especially one outside your domain) suggests abstracting specifics, ask whether the target audience would recognize them. If yes, keep your specifics. The reviewer may be optimizing for a general audience when your audience is actually specialist.
+
+**Related:** [[pattern-36-cross-industry-dejargonization]] is the canonical positive guidance for cross-industry positioning — translate concrete domain nouns to concrete industry-agnostic nouns, never to abstract consultant-speak.
 
 ### Anti-Pattern 14: Generalist Voice Override in Specialist Resume [PEER-REVIEW-SOURCED]
 
@@ -2321,7 +2401,7 @@ The source material reflects senior-level tech recruiting cultures. The skill is
 
 **How to use the patterns now:**
 - Treat **[CONFIRMED]** patterns (2, 4, 5, 6, 7, 8, 9, 21, 24, 29, 30, 31, 32, 33, 34) as reliable principles to apply broadly
-- Treat **[OBSERVED]** patterns (1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 25, 35) as candidate techniques — apply when they fit
+- Treat **[OBSERVED]** patterns (1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 25, 35, 36) as candidate techniques — apply when they fit
 - Treat **[CONTEXT-DEPENDENT]** patterns (3) as situational — evaluate fit per candidate
 - Treat **[PEER-REVIEW-SOURCED]** patterns (19, 20, 22, 23) as reviewer-recommended techniques — apply with honest guardrails (Pattern 23 has confirmed-outcome backing)
 - Treat **[METHODOLOGY]** patterns (26, 27, 28) as required upstream procedures — Pattern 28 (Industry and Role Inference) must run first at Step 1 before any tactical pattern is applied; Pattern 26 (Title Research) runs second as part of Step 1; Pattern 27 (Business Context Validation) runs throughout before drafting any bullet with domain-specific terms
